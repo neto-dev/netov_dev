@@ -1,11 +1,12 @@
 <template>
   <section>
-    <v-app-bar absolute color="rgba(0,0,0,0)" flat dark>
-      <v-toolbar-title>Ernesto Valenzuela Vargas</v-toolbar-title>
+    <v-app-bar fixed color="rgba(0,0,0,0.5)" elevate-on-scroll scroll-target="#expertice" flat dark>
+      <v-toolbar-title>Ernesto Valenzuela (@netodev)</v-toolbar-title>
 
       <div class="flex-grow-1"></div>
       <v-btn text small>Home</v-btn>
       <v-btn text small href="#about" @click.prevent="scrollTo('#about')">Sobre Mi</v-btn>
+      <v-btn text small href="#likes" @click.prevent="scrollTo('#about')">Gustos</v-btn>
       <v-btn text small href="#skills" @click.prevent="scrollTo('#skills')">Habilidades</v-btn>
       <v-btn text small href="#projects" @click.prevent="scrollTo('#projects')">Proyectos</v-btn>
       <v-btn text small href="#expertice" @click.prevent="scrollTo('#expertice')">Experiencia</v-btn>
@@ -37,7 +38,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-parallax dark src="../assets/img/cover.jpg">
+    <v-parallax dark src="../assets/img/coverprofile-2.jpg">
       <v-row align="center" justify="center">
         <div class="text-center">
           <div>
@@ -46,31 +47,61 @@
         </div>
       </v-row>
     </v-parallax>
-    <v-container fluid id="dd">
+    <v-container fluid id="dd" class="pa-0">
       <v-row id="about">
         <v-col cols="12">
           <v-row :align="alignment" :justify="justify" class="grey lighten-5">
             <v-col cols="5" class="pa-12">
-              <img class="profileImg" src="../assets/img/profile.jpg" alt />
+              <img class="logoImg" src="../assets/img/reallogo.png" alt />
             </v-col>
             <v-col cols="7" class="pa-12">
               <h1 class="mb-5 headline font-weight-light">Desarrollador de Software.</h1>
               <p
-                class="font-weight-light body-2 mt-5"
-                style="color: #363D43"
+                      class="font-weight-light body-2 mt-5"
+                      style="color: #363D43"
               >Hola mi nombre es Ernesto Valenzuela, soy apasionado a las tecnologías y todo lo referente con diseño y desarrollo, me especialicé en desarrollo Frontend y Backend, pero eso no me impidió adquirir amplio conocimiento en Diseño UX/UI. Tengo un conjunto de habilidades diversas que me permite trabajar en múltiples áreas de mi campo, tanto en la parte de diseño como la de desarrollo.</p>
               <p
-                class="font-weight-light body-2 mt-5"
-                style="color: #363D43"
+                      class="font-weight-light body-2 mt-5"
+                      style="color: #363D43"
               >Siempre busco crecer en lo académico así como también en lo moral logrando con esto un perfecto equilibrio, soy duro y estricto con migo para lograr las metas que me propongo, durmiendo poco, trabajando mucho y estudiando lo suficiente para innovar y sobresalir en mi campo.</p>
               <p
-                class="font-weight-light body-2 mt-5"
-                style="color: #363D43"
+                      class="font-weight-light body-2 mt-5"
+                      style="color: #363D43"
               >Soy muy bueno para trabajar en equipo ya que tengo un carácter muy agradable hacia los demás y me gusta mucho escuchar todas las opiniones y no soy cerrado a nada nuevo. He liderado 2 equipos de trabajo anteriormente y a partir de eso he adquirido buenas amistades ya que como comento trato de acoplarme al equipo en dónde me integre.</p>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
+      <v-parallax dark style="height: auto !important" src="../assets/img/cover.jpg" >
+        <v-row id="likes"  >
+          <v-col cols="12"  >
+            <v-row align="center"
+                   justify="center" >
+              <v-col cols="7" class="pa-12" >
+                <h1 class="mb-5 headline font-weight-light textShadow" >Mis Gustos.</h1>
+                <h2 class="mb-5 title font-weight-light textShadow">Deportes:</h2>
+                <p
+                        class="font-weight-light body-2 mt-5 textShadow"
+                >
+                  Mi gran pasión es el deporte en general, he practicado desde el ya clásico Futbol hasta artes marciales mixtas, Futbol Americano, Boxeo, entre otros, actualmente estudio la carrera de Educación Física, es tanto lo que amo el deporte que decidí estudiar esa carrera para un día no muy lejano trabajar como preparador físico. Los principales deportes que practico son atletismo de fondo en pruebas de 5k, 10k y Medio Maratón; actualmente entreno para Maratón y Triatlón. También practico Futbol llanero, anteriormente en la posición de medio campista ahora como portero.
+
+                <h2 class="mb-5 title font-weight-light textShadow">Música:</h2>
+                <p class="font-weight-light body-2 mt-5 textShadow">
+                Me fascina escuchar música al por mayor el 70% de mi día estoy escuchando música, entre mis géneros preferidos están el Punk, Rock, Ska, entre otros géneros. Puedo escuchar un Gorgoroth y de repente un gusto culposo como Alejandro Sanz              </p>
+                <h2 class="mb-5 title font-weight-light textShadow">Naturaleza:</h2>
+                <p
+                        class="font-weight-light body-2 mt-5 textShadow"
+                >
+                  Me encanta mucho la naturaleza, algún día desearía vivir en una pradera o en un bosque lejos de toda sociedad, me encanta el olor a leña (mojada, quemada), para mi no hay nada mejor que despertar, salir, y contemplar la naturaleza.
+                </p>
+              </v-col>
+              <v-col cols="5" class="pa-12">
+                <img class="profileImg" src="../assets/img/profile.jpg" alt />
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-parallax>
       <v-row id="skills">
         <v-col cols="12">
           <v-row :align="alignment" :justify="justify" class="grey lighten-5">
@@ -133,7 +164,7 @@
       </v-row>
       <v-row id="projects">
         <v-col cols="12">
-          <h2 class="mb-5 ml-8 display-1 font-weight-light">Proyectos</h2>
+          <h2 class="mb-5 ml-8 display-1 font-weight-light" style="color:#DB4414">Proyectos</h2>
           <v-row :align="alignment" :justify="justify" class="grey lighten-5">
             <v-col cols="6" class="pa-12">
               <v-row>
@@ -232,7 +263,7 @@
       </v-row>
       <v-row id="expertice">
         <v-col cols="12">
-          <h2 class="mb-5 ml-8 display-1 font-weight-light">Experiencia Laboral</h2>
+          <h2 class="mb-5 ml-8 display-1 font-weight-light" style="color:#DB4414">Experiencia Laboral</h2>
           <v-row :align="center" justify="center" class="grey lighten-5">
             <v-col cols="6" class="pa-12">
               <v-row>
@@ -436,6 +467,15 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
+.likes{
+  background: #2C3E50;
+  color: white;
+}
+
+.textShadow{
+  text-shadow: 2px 2px 4px #000000;
+}
+
 #typewriter {
   overflow: hidden;
   white-space: nowrap;
@@ -445,8 +485,12 @@ export default {
   animation: typing 5s steps(11) infinite, blink-caret 500ms steps(11) infinite;
 }
 .profileImg {
-  width: 100%;
-  border-radius: 10px;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.logoImg{
+  width: 80%;
 }
 
 @keyframes typing {
