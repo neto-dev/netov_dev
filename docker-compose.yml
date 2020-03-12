@@ -1,11 +1,8 @@
-version: "3"
+version: '3'
 
 services:
-  web_server:
-    build: ./
-  web_proxy:
-    build: proxy/.
-    links:
-      - web_server:netov
+  app:
+    build:
+      context: ./
     ports:
-      - 80:80
+      - 8081:8080
