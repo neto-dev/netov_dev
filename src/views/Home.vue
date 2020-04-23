@@ -63,6 +63,15 @@
               >Experiencia</v-btn
             >
           </v-list-item>
+          <v-list-item>
+            <v-btn
+              text
+              class="navigation-btn"
+              target="_blank"
+              href="https://drive.google.com/file/d/1ModpTdu0OPQuyiLBWWyEh0mqL1vDiq8b/view?usp=sharing"
+              >CV</v-btn
+            >
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -74,9 +83,12 @@
       flat
       dark
     >
-      <v-toolbar-title class="menu-medium">Ernesto Valenzuela (@netodev)</v-toolbar-title>
+      <v-toolbar-title class="menu-medium"
+        >Ernesto Valenzuela (@netodev)</v-toolbar-title
+      >
 
       <div class="flex-grow-1"></div>
+
       <v-btn
         text
         class="menu-medium"
@@ -124,6 +136,14 @@
         href="#expertice"
         @click.prevent="scrollTo('#expertice')"
         >Experiencia</v-btn
+      >
+      <v-btn
+        text
+        class="menu-medium"
+        small
+        target="_blank"
+        href="https://drive.google.com/file/d/1ModpTdu0OPQuyiLBWWyEh0mqL1vDiq8b/view?usp=sharing"
+        >CV</v-btn
       >
       <v-btn icon href="https://twitter.com/neto_dev" target="_blank">
         <v-icon>mdi-twitter</v-icon>
@@ -201,17 +221,18 @@
               <p class="font-weight-light body-2 mt-5" style="color: #363d43;">
                 Siempre busco crecer en lo académico así como también en lo
                 moral logrando con esto un perfecto equilibrio, soy duro y
-                estricto con migo para lograr las metas que me propongo,
-                durmiendo poco, trabajando mucho y estudiando lo suficiente para
-                innovar y sobresalir en mi campo.
+                estricto con migo para lograr las metas que me propongo.
               </p>
               <p class="font-weight-light body-2 mt-5" style="color: #363d43;">
-                Soy muy bueno para trabajar en equipo ya que tengo un carácter
-                muy agradable hacia los demás y me gusta mucho escuchar todas
-                las opiniones y no soy cerrado a nada nuevo. He liderado 2
-                equipos de trabajo anteriormente y a partir de eso he adquirido
-                buenas amistades ya que como comento trato de acoplarme al
-                equipo en dónde me integre.
+                Soy muy bueno para trabajar en equipo ya que creo tener un
+                carácter muy agradable hacia los demás y me gusta mucho escuchar
+                todas las opiniones y no soy cerrado a nada nuevo. He liderado 2
+                equipos de trabajo, en uno lidere todo el proyecto en generar
+                (Diseño, Frontend, Backend) en esta empresa gracias a mi
+                desempeño me tomaron en cuenta para tener acciones de la
+                empresa. En otra lidere el equipo de aplicaciónes móviles, a
+                partir de eso he adquirido buenas amistades ya que como comento
+                trato de acoplarme al equipo en dónde me integre.
               </p>
             </v-col>
           </v-row>
@@ -220,7 +241,7 @@
       <v-parallax
         dark
         style="height: auto !important;"
-        src="../assets/img/cover.jpg"
+        src="../assets/img/cover.png"
       >
         <v-row id="likes">
           <v-col cols="12">
@@ -323,10 +344,11 @@
                     Backend Developer
                   </h2>
                   <p>
-                    Me considero un apasionado por el desarollo backend, en este
-                    ramo he dedicado bastante tiempo y esfuerzo para
-                    especializarme, con mas de 5 años de experiencia en diversos
-                    proyectos y tecnologías
+                    Me considero un buen desarrollador backend, en este ramo he
+                    dedicado bastante tiempo y esfuerzo para especializarme, con
+                    mas de 5 años de experiencia en diversos proyectos y
+                    tecnologías. Desarrollando multiples arquitecturas, API's,
+                    modulos de sincronización entre otros proyectos.
                   </p>
                   <p>
                     Las tecnologías que domino son principalmente GO, Ruby y
@@ -671,8 +693,16 @@
     <v-footer dark padless>
       <v-card class="flex" flat tile>
         <v-card-actions class="grey darken-3 justify-center">
-          {{ new Date().getFullYear() }} —
-          <strong>Ernesto Valenzuela Vargas</strong>
+          {{ new Date().getFullYear() }}
+          <strong> — Ernesto Valenzuela Vargas | </strong>
+          <v-btn
+            text
+            class="menu-medium"
+            small
+            target="_blank"
+            href="https://drive.google.com/file/d/1CVGyU102bTD2qhMw8x-5XJcgAG8g8kq6/view?usp=sharing"
+            >CV Versión Extendida</v-btn
+          >
         </v-card-actions>
       </v-card>
     </v-footer>
@@ -862,7 +892,7 @@ export default {
 }
 
 @media (max-width: 850px) {
-.menu-medium {
+  .menu-medium {
     display: none !important;
   }
 
@@ -883,7 +913,5 @@ export default {
   .titles-headers {
     display: block;
   }
-
-  
 }
 </style>
