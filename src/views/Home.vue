@@ -221,7 +221,7 @@
               <p class="font-weight-light body-2 mt-5" style="color: #363d43;">
                 Siempre busco crecer en lo académico así como también en lo
                 moral logrando con esto un perfecto equilibrio, soy duro y
-                estricto con migo para lograr las metas que me propongo.
+                estricto conmigo para lograr las metas que me propongo.
               </p>
               <p class="font-weight-light body-2 mt-5" style="color: #363d43;">
                 Soy muy bueno para trabajar en equipo ya que creo tener un
